@@ -5,9 +5,9 @@
    <style>canvas { width: 100%; height: 100% }</style>
 </head>
 <body>
-   <script src="three.js"></script>                <!--Incluyendo la biblioteca-->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r90/three.min.js"></script>                <!--Incluyendo la biblioteca-->
    <script>
-		
+		   
    //Escena
    var scene = new THREE.Scene();                  // Creando el objeto escena, donde se añadirán los demás.
 			
@@ -27,7 +27,7 @@
    document.body.appendChild(renderer.domElement);           // Añadir el renderizador al elemento DOM body.
 
   //Geometría
-   var geometry = new THREE.CubeGeometry(1,1,1);   // Crear geometría cúbica con dimensiones(x, y, z).
+   var geometry = new THREE.CubeGeometry(1,1,1);   // Crear geometría cúbica con dimensiones(x, y, z). 
    var material = new THREE.MeshLambertMaterial({color: 0xFF0000}); // Crear el material para la
 			                                            // geometría y darle color rojo.
    var cube = new THREE.Mesh(geometry, material);  // Crear una malla que agrupará la geometría
